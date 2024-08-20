@@ -1,0 +1,31 @@
+class Kalkulator:
+    def __init__(self, angka1, angka2):
+        self.angka1 = angka1
+        self.angka2 = angka2
+    
+    def tambah(self):
+        return self.angka1 + self.angka2
+    
+    def kurang(self):
+        return self.angka1 - self.angka2
+    
+    def kali(self):
+        return self.angka1 * self.angka2
+    
+    def bagi(self):
+        if self.angka2 == 0:
+            return "Error: Tidak bisa membagi dengan nol."
+        return self.angka1 / self.angka2
+
+# Contoh penggunaan nya
+kalkulator = Kalkulator(10, 5) # Angka untuk pertambahan
+print("Tambah:", kalkulator.tambah()) # Contoh untuk pertambahan
+
+kalkulator = Kalkulator(20, 5) # Angka untuk Pengurangan
+print("Kurang:", kalkulator.kurang()) # Contoh untuk pengurangan
+
+kalkulator = Kalkulator(5, 3) # Angka untuk perjalian
+print("Kali:", kalkulator.kali()) # Contoh untuk perkalian
+
+kalkulator = Kalkulator(150, 10) # Angka untuk pembagian
+print("Bagi:", kalkulator.bagi()) # Contoh untuk pembagian
